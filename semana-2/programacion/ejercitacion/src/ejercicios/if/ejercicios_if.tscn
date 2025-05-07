@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4akvxwscd1px"]
+
+[ext_resource type="Script" uid="uid://cftmgqd35h88" path="res://src/ejercicios/if/ejercicios_if.gd" id="1_pkmo4"]
+
+[node name="ejercicios_if" type="Node"]
+script = ExtResource("1_pkmo4")

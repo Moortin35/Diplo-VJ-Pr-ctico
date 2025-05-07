@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0e0j78weoq00"]
+
+[ext_resource type="PackedScene" uid="uid://cohf2vwi4bg6a" path="res://src/ejercicios/num/ejercicios_num.tscn" id="1_gh0ne"]
+[ext_resource type="PackedScene" uid="uid://b4akvxwscd1px" path="res://src/ejercicios/if/ejercicios_if.tscn" id="2_5q4o7"]
+[ext_resource type="PackedScene" uid="uid://cny18pemaavlo" path="res://src/ejercicios/for/ejercicios_for.tscn" id="3_5q4o7"]
+
+[node name="Main" type="Node"]
+
+[node name="Ejercicios Num" parent="." instance=ExtResource("1_gh0ne")]
+
+[node name="ejercicios_if" parent="." instance=ExtResource("2_5q4o7")]
+
+[node name="ejercicios_for" parent="." instance=ExtResource("3_5q4o7")]

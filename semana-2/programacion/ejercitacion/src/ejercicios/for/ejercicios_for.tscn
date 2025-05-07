@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cny18pemaavlo"]
+
+[ext_resource type="Script" uid="uid://g5rnrwu0xeoc" path="res://src/ejercicios/for/ejercicios_for.gd" id="1_s0rc3"]
+
+[node name="ejercicios_for" type="Node"]
+script = ExtResource("1_s0rc3")

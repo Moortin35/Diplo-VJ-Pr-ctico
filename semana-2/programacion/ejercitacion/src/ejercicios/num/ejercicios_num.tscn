@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cohf2vwi4bg6a"]
+
+[ext_resource type="Script" uid="uid://x3mnixwxbh8x" path="res://src/ejercicios/num/ejercicios_num.gd" id="1_uxhlr"]
+
+[node name="Ejercicios Num" type="Node"]
+script = ExtResource("1_uxhlr")
