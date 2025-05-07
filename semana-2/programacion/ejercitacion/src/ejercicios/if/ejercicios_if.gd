@@ -3,6 +3,7 @@ extends Node
 func _ready() -> void:
 	##Realizar los llamados de las funciones en _ready
 	#El error va a desaparecer una vez que ingresemos codigo en la funcion _ready()
+	print("\nEjercicios de If\n")
 	var persona1 = {nombre = "Carlos", edad = 10}
 	var persona2 = {nombre = "Roberto", edad = 20}
 	var numerillo = 3
