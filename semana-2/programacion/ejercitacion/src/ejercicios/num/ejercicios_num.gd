@@ -1,6 +1,5 @@
 extends Node
 
-
 func _ready() -> void:
 	print("\nEjercicios de Num\n")
 	hola_mundo()
@@ -19,8 +18,9 @@ func _ready() -> void:
 	#El error va a desaparecer una vez que ingresemos codigo en la funcion _ready()
 	area_triangulo(4,8)
 	area_circulo(5)
-	fahr_to_cels(108)
-	
+	fahr_to_cels(90)
+	calculadora_freelancer()
+	valor_absoluto(-54)
 
 ##Ejercicio 1: Imprimir un Mensaje en Pantalla
 #Escribe una funcion que muestre el mensaje "¡Hola, mundo de Godot!" por pantalla.
@@ -70,7 +70,10 @@ func fahr_to_cels(temperatura):
 
 ##Ejercicio 10: Calculadora Freelancer
 #Si un freelancer cobra 15 USD la hora, calcular cuánto gana en un proyecto de 42 horas.
-
+func calculadora_freelancer():
+	print("Un freelancer que cobra 15USD la hora, si su proyecto le tomó 42 horas, le pagarían: ", 15*42)
 
 ##Ejercicio 11: Valor de un número
 #Dado un número cualquiera (positivo o negativo), imprimir su valor absoluto.
+func valor_absoluto(numero):
+	print("El valor absoluto de este número es: ", abs(numero))
