@@ -12,6 +12,7 @@ func _ready() -> void:
 	var num1 = 50
 	var num2 = 25
 	var lado = 5
+	
 	#Llamado a funciones
 	hola_mundo()
 	imprimir_nombre(nombre)
