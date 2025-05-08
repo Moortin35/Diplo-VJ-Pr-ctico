@@ -3,7 +3,9 @@ extends Node
 func _ready() -> void:
 	##Realizar los llamados de las funciones en _ready
 	#El error va a desaparecer una vez que ingresemos codigo en la funcion _ready()
-	print("\nEjercicios de If\n")
+	print("\nEjercicios de if\n")
+	
+	#Declaración de variables
 	var persona1 = {nombre = "Carlos", edad = 10}
 	var persona2 = {nombre = "Roberto", edad = 20}
 	var numerillo = 3
@@ -14,6 +16,7 @@ func _ready() -> void:
 	var d = 1
 	var e = 25
 	
+	#Llamado a funciones
 	edad(persona1, persona2)
 	par_o_impar(numerillo)
 	es_pos_neg(numerillo)
@@ -25,6 +28,7 @@ func _ready() -> void:
 	expresion("(El arsenal de inglaterra cayó 2 a 0 en parís)")
 	raiz_de_numero(16)
 	
+#Implementación de funciones:
 ##Ejercicio 1: Edad de 2 Personas
 #compara la edad de dos personas y muestra quién es mayor o si tienen la misma edad.
 func edad(person1, person2):
@@ -86,9 +90,23 @@ func mayor_de_tres(a,b,c):
 ##Ejercicio 7: Mayor de 5 Números
 #Determinar cuál es el mayor entre cinco números distintos.
 func el_mayor_de_cinco(a,b,c,d,e):
-	var res = max(a,b,c,d,e)
-	print("El mayor de los cinco es: ", res)
-
+	#Solución facil
+	#var res = max(a,b,c,d,e)
+	#print("El mayor de los cinco es: ", res)
+	if a == b and b == c and c == d and d == e:
+		print ("Los cinco números son iguales")
+	elif max(a,b,c,d,e) == a:
+		print ("El mayor de los cinco es: ", a)
+	elif max(a,b,c,d,e) == b:
+		print ("El mayor de los cinco es: ", b)
+	elif max(a,b,c,d,e) == c:
+		print ("El mayor de los cinco es: ", c)
+	elif max(a,b,c,d,e) == d:
+		print ("El mayor de los cinco es: ", d) 
+	else:
+		print ("El mayor de los cinco es: ", e)
+	
+	
 ##Ejercicio 8: Número más Cercano
 #Determinar qué número está más cerca de 10: a o b.
 func mas_cercano(a,b):

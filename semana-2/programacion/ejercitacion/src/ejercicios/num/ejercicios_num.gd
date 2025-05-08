@@ -1,27 +1,31 @@
 extends Node
 
 func _ready() -> void:
-	print("\nEjercicios de Num\n")
-	hola_mundo()
-	var nombre = "Mortin"
-	imprimir_nombre(nombre)
-	var apellido = "Delgado"
-	imprimir_nom_ape(nombre, apellido)
-	var edad = 25
-	calcular_edad(nombre, edad)
-	var num1 = 50
-	var num2 = 25
-	suma_de_positivos(num1, num2)
-	var lado = 5
-	area_cuadrado(lado)
 	##Realizar los llamados de las funciones en _ready
 	#El error va a desaparecer una vez que ingresemos codigo en la funcion _ready()
+	print("\nEjercicios de num\n")
+	
+	#Declaración de variables
+	var nombre = "Mortin"
+	var apellido = "Delgado"
+	var edad = 25
+	var num1 = 50
+	var num2 = 25
+	var lado = 5
+	#Llamado a funciones
+	hola_mundo()
+	imprimir_nombre(nombre)
+	imprimir_nom_ape(nombre, apellido)
+	calcular_edad(nombre, edad)
+	suma_de_positivos(num1, num2)
+	area_cuadrado(lado)
 	area_triangulo(4,8)
 	area_circulo(5)
 	fahr_to_cels(90)
 	calculadora_freelancer()
 	valor_absoluto(-54)
 
+#Implementación de funciones:
 ##Ejercicio 1: Imprimir un Mensaje en Pantalla
 #Escribe una funcion que muestre el mensaje "¡Hola, mundo de Godot!" por pantalla.
 func hola_mundo():
